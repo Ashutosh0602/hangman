@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <h1 class="name">Hangman</h1>
+    <h3 class="title">Guess a word to win!</h3>
+    <div class="main_game">
+        <svg width="200" height="250" class="game_figure">
+            <line x1="60" y1="20" x2="140" y2="20"/>
+            <line x1="140" y1="20" x2="140" y2="50"/>
+            <line x1="60" y1="20" x2="60" y2="220"/>
+            <line x1="10" y1="220" x2="140" y2="220"/>
+
+            <circle cx="140" cy="70" r="20" class="figure_part"/>
+
+            <line x1="140" y1="90" x2="140" y2="170" class="figure_part"/>
+
+            <line x1="140" y1="90" x2="100" y2="120" class="figure_part"/>
+            <line x1="140" y1="90" x2="180" y2="120" class="figure_part"/>
+
+            <line x1="140" y1="170" x2="100" y2="210" class="figure_part"/>
+            <line x1="140" y1="170" x2="180" y2="210" class="figure_part"/>
+        </svg>
+        <div class="wrong_letter">
+            <div class="letter_contain">
+                <p class="wrong_para">Wrong</p>
+                <p class="wrong_span"></p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="word"></div>
+    <div class="prompt_notf">
+        <div class="prompt">
+            <h2 class="result"></h2>
+            <h3 class="result_word"></h3>
+            <button class="play_bt" onClick="window.location.reload();" >Play Again</button>
+        </div>
+    </div>
+    <div class="notify_letter">
+        <p>You already entered this letter!!</p>
+    </div>
+
+<script src="scirpt.js"></script>    
+</body>
+</html>

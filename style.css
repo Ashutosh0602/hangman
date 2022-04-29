@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* filter: blur(5px); */
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+body{
+    background-color: rgb(2, 65, 54);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    letter-spacing: 1rem;
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgb(248, 174, 77);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+h3{
+    font-weight: 100;
+    color: rgb(203, 166, 117);
+}
+.main_game{
+    /* background-color: darkgrey;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 8rem;
+    width: 70vw;
+    height: 50vh;
+}
+.game_figure{
+    fill: transparent;
+    stroke: rgb(203, 166, 117);
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+.figure_part{
+    display: none;
+}
+.wrong_letter{
+    display: none;
+}
+.wrong_para{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(203, 166, 117);
+    font-style: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* transform: translateX(50%); */
+}
+.wrong_span{
+    color: whitesmoke;
+    text-align: center;
+}
+.word{
+    margin-top: 5rem;
+    display: flex;
+}
+.letter{
+    border-bottom: 3px solid rgb(203, 166, 117);
+    width: 3rem;
+    font-size: 2rem;
+    color: rgb(203, 166, 117);
+    text-align: center;
+    /* letter-spacing: 1rem; */
+    margin-right: 1rem;
+}
+.prompt_notf{
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    width: 100vh;
+    height: 100vh;
+}
+.prompt{
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgb(203, 166, 117);
+    padding: 4rem;
+    color: rgb(2, 65, 54);
+}
+button{
+    width: 5rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: rgb(2, 65, 54);
+    color: honeydew;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(2, 124, 103) ;
+}
+.notify_letter{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.163);
+}
+.notifc_letter{
+    display: flex;
+}
+.notify_letter p{
+    margin: 1rem;
+    color: whitesmoke;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    h1{
+        font-size: 3.5rem;
+        margin-top: 1rem;
+    }
+    .result{
+        margin-bottom: 3rem;
+    }
+    .prompt{
+        font-size: 1rem;
+        padding: 5.5rem 2rem;
+    }
+    .main_game{
+        /* width: 60vw; */
+    }
+  }
